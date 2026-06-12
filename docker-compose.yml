@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: saved-gigs-db
+    environment:
+      POSTGRES_USER: saved_gigs
+      POSTGRES_PASSWORD: saved_gigs
+      POSTGRES_DB: saved_gigs
+    ports:
+      - "5432:5432"
+    volumes:
+      - saved_gigs_pgdata:/var/lib/postgresql/data
+
+volumes:
+  saved_gigs_pgdata:

@@ -1,0 +1,7 @@
+packages:
+  - shared
+  - backend
+  - web
+allowBuilds:
+  esbuild: true
+  sharp: true
