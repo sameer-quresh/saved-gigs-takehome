@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.next/
+.env
+.env.local
+*.log
+coverage/
+.turbo/
+*.tsbuildinfo
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

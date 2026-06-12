@@ -1,0 +1,17 @@
+{
+  "name": "saved-gigs",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter shared build && pnpm --filter backend build && pnpm --filter web build",
+    "dev": "pnpm --filter shared dev & pnpm --filter backend dev & pnpm --filter web dev",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter backend test",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:migrate": "pnpm --filter backend migrate",
+    "db:seed": "pnpm --filter backend seed"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
